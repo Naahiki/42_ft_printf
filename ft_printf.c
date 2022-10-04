@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nrodrigu <nrodrigu@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 15:16:23 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/09/30 15:17:02 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/10/03 16:44:47 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "ft_printf.h"
 

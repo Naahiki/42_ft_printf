@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_puthexa.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/04 16:58:24 by nrodrigu          #+#    #+#             */
+/*   Updated: 2022/10/04 16:58:32 by nrodrigu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /***************EJEMPLO CALCULO HEXADECIMAL********************/
 /* El numero 2619 decimal en hexadecimal es A3B ¿Como se calcula?*/
 /* Hexadecimal puede tener estos valores: 0123456789ABCDEF, donde A=10, B=11; C=12, D=13, E=14, F=15.
