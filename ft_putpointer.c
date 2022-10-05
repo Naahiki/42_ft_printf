@@ -9,5 +9,10 @@
 /*   Updated: 2022/10/04 16:58:01 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "ft_printf.h"
+int ft_putpointer(size_t nb)
+{
+  ft_putstr("0x")
+    return(ft_puthexa(nb, 'x'));
+}
 
