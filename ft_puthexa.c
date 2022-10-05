@@ -18,6 +18,7 @@
 163 / 16 = 10 (163 % 16 = módulo = 3)
 10 / 16 = 0 (10 %16 = módulo = 10, donde en hexadecimal 10 = A)
 Resultado: A3B*/
+/*Estoy metiendo el puntero tambien*/
 
 #include "ft_printf.h"
 
@@ -26,7 +27,7 @@ int	ft_puthexa(size_t nb, char c)
 	int	i;
 
 	i = 0;
-	if (c == 'p' || c == 'x')
+	if (c == 'x' || c == 'p')
 	{
 		if (nb >= 16)
 			i+=ft_puthexa(nb / 16, c);
