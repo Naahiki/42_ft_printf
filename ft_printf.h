@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/30 15:15:58 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/10/03 16:41:29 by nrodrigu         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
@@ -17,6 +5,14 @@
 # include <unistd.h>
 # include <stdio.h>
 
-int	ft_printf(char const *s, ...);
+
+int	ft_printf(const char *s, ...);
+int	ft_putnbr(int n);
+int	ft_putchar(char c);
+int	ft_putstr(char *s);
+size_t	ft_strlen(const char *s);
+int	ft_puthexa(size_t nb, char c);
+int	ft_put_unsignednb(unsigned int nb);
+int	ft_checkcondition(va_list arg, char c);
 
 #endif
