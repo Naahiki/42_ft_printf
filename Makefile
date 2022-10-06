@@ -6,13 +6,22 @@
 #    By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/30 15:13:32 by nrodrigu          #+#    #+#              #
-#    Updated: 2022/09/30 15:15:45 by nrodrigu         ###   ########.fr        #
+#    Updated: 2022/10/06 19:26:37 by nrodrigu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME= libftprintf.a
 
-SRC= ft_printf.c
+.SILENT:
+
+SRC= ft_printf.c \
+	 ft_putchar.c \
+	 ft_putstr.c \
+	 ft_check_condition.c \
+	 ft_puthexa.c \
+	 ft_strlen.c \
+	 ft_put_unsignednb.c \
+	 ft_putnbr.c \
 
 OBJS= $(SRC:%.c=%.o)
 
