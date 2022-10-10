@@ -6,7 +6,7 @@
 /*   By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:05:30 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/10/10 12:36:28 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/10/10 19:04:43 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,9 @@ int	ft_printf(const char *s, ...)
 		}
 		else
 		{
-			cont = cont + ft_check_condition(arg, s[i + 1]);
+			ft_check_condition(arg, s[i + 1]);
 				i = i + 2;
+				cont++;
 		}
 	}
 	va_end (arg);
