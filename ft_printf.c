@@ -6,7 +6,7 @@
 /*   By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:05:30 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/10/10 11:14:34 by nrodrigu         ###   ########.fr       */
+/*   Updated: 2022/10/10 12:36:28 by nrodrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_printf(const char *s, ...)
 	{
 		if (s[i] != '%')
 		{
-			cont = ft_putchar(s[i]);
+			ft_putchar(s[i]);
 			i++;
 			cont++;
 		}
