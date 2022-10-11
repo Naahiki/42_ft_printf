@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: nrodrigu <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/10 11:05:30 by nrodrigu          #+#    #+#             */
-/*   Updated: 2022/10/10 19:04:43 by nrodrigu         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "ft_printf.h"
 
@@ -16,26 +5,25 @@ int	ft_printf(const char *s, ...)
 {
 	va_list	arg;
 	int		i;
-	int		cont;
-
+	int		count;
+	
+	count = 0;
 	i = 0;
-	cont = 0;
-	va_start(arg, s);
-	while (s[i])
+	va_start (arg, s);
+	while (s[i] != '\0')
 	{
 		if (s[i] != '%')
 		{
 			ft_putchar(s[i]);
+			count++;
 			i++;
-			cont++;
 		}
 		else
 		{
-			ft_check_condition(arg, s[i + 1]);
-				i = i + 2;
-				cont++;
+			count += ft_check_condition(arg,s[i + 1]);
+			i += 2;
 		}
 	}
-	va_end (arg);
-	return (cont);
+	va_end(arg);
+	return (count);
 }

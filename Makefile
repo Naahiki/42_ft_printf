@@ -1,37 +1,35 @@
-NAME= libftprintf.a
+NAME = libftprintf.a
 
 .SILENT:
 
-SRC= ft_printf.c \
-     ft_putstr.c \
-ft_putnbr.c \
-ft_put_unsignednb.c \
-ft_puthexa.c \
-ft_check_condition.c \
-ft_putchar.c
+SRC =	ft_printf.c \
+ 		ft_putchar.c \
+		ft_puthexa.c \
+		ft_putnbr.c \
+		ft_putstr.c \
+		ft_put_unsignednb.c \
+		ft_strlen.c \
+		ft_check_condition.c
+		
+CC = gcc		
+CFLAGS = -Wall -Werror -Wextra
+AR = ar rc
+OBJS = $(SRC:%.c=%.o)
 
-OBJS= $(SRC:%.c=%.o)
+all : $(NAME)
 
-CFLAGS= -Wall -Wextra -Werror
-
-AR= ar rcs
-
-RM= rm -f
-
-all: $(NAME)
-
-$(NAME) : $(OBJS)
+$(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
-	echo "Compiled"
+	echo "Compilado"
 
 clean:
-	$(RM) $(OBJS)
-	echo "Removed .o files"
+	rm -rf $(OBJS)
+	echo "Archivos .o elminados"
 
 fclean: clean
-	$(RM) $(NAME)
-	echo "Removed .a files"
+	rm -rf $(NAME)
+	echo "Archivos .o .a elimiandos"
 
-re: fclean $(NAME)
+re: fclean all
 
 .PHONY: all clean fclean re
