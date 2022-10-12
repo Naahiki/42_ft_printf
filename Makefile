@@ -19,15 +19,15 @@ all : $(NAME)
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
-	echo "Compilado"
+	echo "Compiled"
 
 clean:
 	rm -rf $(OBJS)
-	echo "Archivos .o elminados"
+	echo "Removed .o files"
 
 fclean: clean
 	rm -rf $(NAME)
-	echo "Archivos .o .a elimiandos"
+	echo "Removed .a file"
 
 re: fclean all
 
