@@ -11,7 +11,6 @@ SRC =	ft_printf.c \
 		ft_strlen.c \
 		ft_check_condition.c
 		
-CC = gcc		
 CFLAGS = -Wall -Werror -Wextra
 AR = ar rc
 OBJS = $(SRC:%.c=%.o)
